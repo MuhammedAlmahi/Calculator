@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="plus-icon.png" type="image/x-icon">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <title>Calculator</title>
+    </head>
+
+
+
+    <body bgcolor="black">
+
+        <input type="text" class="result" name="display" value="">
+
+        <div class="Grid">
+
+            <input type="button" value="1" class="numbers" 
+            onclick="document.querySelector('.result').value += '1' ">
+
+            <input type="button" value="2" class="numbers" 
+            onclick="document.querySelector('.result').value += '2' ">
+            
+            <input type="button" value="3" class="numbers" 
+            onclick="document.querySelector('.result').value += '3' ">
+
+
+            <input type="button" value="÷" class="operator"
+            onclick="document.querySelector('.result').value += '/' ">
+            
+
+            <input type="button" value="4" class="numbers" 
+            onclick="document.querySelector('.result').value += '4' ">
+            
+
+            <input type="button" value="5" class="numbers" 
+            onclick="document.querySelector('.result').value += '5' ">
+            
+
+            <input type="button" value="6" class="numbers" 
+            onclick="document.querySelector('.result').value += '6' ">
+
+
+            <input type="button" value="x" class="operator"
+            onclick="document.querySelector('.result').value += '*' ">
+
+
+            <input type="button" value="7" class="numbers" 
+            onclick="document.querySelector('.result').value += '7' ">
+            
+
+            <input type="button" value="8" class="numbers" 
+            onclick="document.querySelector('.result').value += '8' ">
+            
+
+            <input type="button" value="9" class="numbers" 
+            onclick="document.querySelector('.result').value += '9' ">
+
+
+            <input type="button" value="−" class="operator"
+            onclick="document.querySelector('.result').value += '-' ">
+
+
+            <input type="button" value="AC" class="numbers"
+            onclick="document.querySelector('.result').value = '' ">
+
+
+            <input type="button" value="0" class="numbers" 
+            onclick="document.querySelector('.result').value += '0' ">
+            
+
+            <input type="button" value="=" class="operator"
+            onclick="document.querySelector('.result').value = 
+            eval(document.querySelector('.result').value).toFixed(2)">
+            
+
+            <input type="button" value="+" class="operator"
+            onclick="document.querySelector('.result').value += '+' ">
+        
+
+        </div>
+
+        <div class="notes">
+            <ul>
+                <li>(/) For Division</li>
+                <li>(*) For Multiplication</li>
+              </ul> 
+        </div>
+        <br>
+        
+
+    </body>
+    
+</html>
